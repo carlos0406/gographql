@@ -1,7 +1,8 @@
 package graph
 
-// This file will not be regenerated automatically.
-//
-// It serves as dependency injection for your app, add any dependencies you require here.
+import internaldatabase "graphql/internal/database"
 
-type Resolver struct{}
+type Resolver struct {
+	CategoryDB *internaldatabase.Category
+	CourseDB   *internaldatabase.Course
+}
